@@ -119,7 +119,7 @@ loadUser = (data) => {
     // console.log('click')
     this.setState({ imageUrl: this.state.input });
     // const MODEL_ID = "face-detection";
-    fetch('https://smart-brain-api-f35v.onrender.com/imageurl', {            
+    fetch('https://smart-brain-front-lmzk.onrender.com/imageurl', {            
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -160,7 +160,7 @@ loadUser = (data) => {
         .then((response) => response.json())
         .then((result) => {
           if (result){
-            fetch('https://smart-brain-api-f35v.onrender.com/image', {            
+            fetch('https://smart-brain-front-lmzk.onrender.com/image', {            
               method: 'put',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({
